@@ -1,5 +1,6 @@
-import styles from "../styles/MainLayout.module.css";
 import Link from "next/link";
+
+import styles from "../styles/MainLayout.module.css";
 import { MainLayout } from "../components/layouts/MainLayout";
 import { LightLayout } from "../components/layouts/LightLayout";
 
@@ -20,6 +21,7 @@ export default function AboutPage() {
 		</>
 	);
 }
+
 AboutPage.getLayout = function getLayout(page) {
 	return (
 		<MainLayout>

@@ -1,9 +1,10 @@
-import styles from "../styles/MainLayout.module.css"; 
 import Link from "next/link";
+
+import styles from "../styles/MainLayout.module.css"; 
 import { MainLayout } from "../components/layouts/MainLayout";
 
 export default function HomePage() { 
-	return (
+	return ( 
 		<MainLayout>
 			<h1>Home Page</h1>
 			<h1 className={styles.title}>

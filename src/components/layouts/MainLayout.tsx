@@ -1,13 +1,14 @@
+import { FC, ReactNode  } from "react";
+
 import Head from "next/head"; 
-import styles from "../../styles/MainLayout.module.css";
-
 import { Inter } from "next/font/google";
-import { Navbar } from "../Navbar.jsx";
 
+import styles from "../../styles/MainLayout.module.css";
+import { Navbar } from "../Navbar.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const MainLayout = ({ children }) => {
+export const MainLayout: FC <{ children: ReactNode }> = ({ children }) => {
 	return (
 		<>
 			<Head>

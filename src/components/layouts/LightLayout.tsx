@@ -1,10 +1,12 @@
-import styles from "../../styles/MainLayout.module.css";
+import { FC, ReactNode } from "react";
 
-import { Inter } from "next/font/google"; 
+import { Inter } from "next/font/google";
+
+import styles from "../../styles/MainLayout.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const LightLayout = ({ children }) => {
+export const LightLayout: FC<{ children: ReactNode }> = ({ children }) => {
 	return (
 		<div
 			style={{
