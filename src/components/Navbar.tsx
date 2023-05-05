@@ -12,9 +12,7 @@ export const Navbar = () => {
 	return (
 		<nav className={styles.menu}>
 			{menuItems.map(({text, href}) => (
-				<ActiveLink key={href} text={text} href={href}>
-					{href}
-				</ActiveLink>
+				<ActiveLink key={href} text={text} href={href}/>  
 			))}
 		</nav>
 	);
